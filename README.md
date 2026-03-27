@@ -178,7 +178,7 @@ print(f"Available columns: {pairs.columns.tolist()}")
 X = pairs[['Average value_Drift']] 
 y = pairs['Average value_Truth']
 
-# 5. ML Steps
+# 5. ML Steps 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 model = LinearRegression()
 model.fit(X_train, y_train)
